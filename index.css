@@ -1,14 +1,12 @@
 .header {
-	display: flex;
+	font-size: 20px;
 	background-color: gray;
+	
 	height: 10vh;
 	border-radius: 5px;
-	
-	width: 98wv;
 }
 
 .footer {
-	display: flex;
 	background-color: gray;
 	height: 5vh;
 	border-radius: 5px;
@@ -16,4 +14,11 @@
 	position: absolute;
     bottom: 2vh;
 	width: 98vw;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  
+  width: 98vw;
 }
