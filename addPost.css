@@ -97,21 +97,42 @@ nav {
 }
 
 }
-
-
-.footer {
-	background-color: rgba(0, 0, 0, 0.93);
-	height: 5vh;
-	border-radius: 5px;
-	
-	position: absolute;
-    bottom: 2vh;
-	width: 98vw;
+.element {
+	position: relative;
+	text-align: center;
 }
 
-.flex-container {
-display: flex;
-flex-wrap: nowrap;
+.textbox {
+    height: 100px;
+    width: 200px;
+    flex-wrap: physical;
+}
 
-width: 98vw;
+#box {
+	position: absolute;
+	width: 350px;
+    height: 400px;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	background-color: lightgray;
+    border-radius: 6px;
+}
+
+#leftside {
+    float: left;
+    height: 250px;
+    width: 120px;
+    
+}
+
+#rightside {
+    float: right;
+    height: 250px;
+    width: 280px;
+    text-align: right;
+    top: 0;
+    bottom: 90px;
 }
