@@ -1,47 +1,53 @@
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'poppins', sans-serif;
     box-sizing: border-box;
-    font-weight: bold;
+    
     
   }
 
   body {
-	line-height: 1.6;
-	margin: 0;
+    background: #efefef;
+    line-height: 1.6;
+    margin: 0;
+    
   }
 
   ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-  }
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
 
 
   a {
-	color: lightpink;
-	text-decoration: none;
+    color: #34495e;
+    text-decoration: none;
   }
 
-  .logo {
-	float:right;
-	position: relative;
-	margin: 10px 15px 15px 10px;
-	font-size: 1.1em;
+
+  .nav-user-icon {
+  margin: 0;
+	width: 160px;
+  font-size: 1.1.em;
+  margin-right: 45px;
+  }
+  
+  
+  .nav-user-icon img{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .nav-user-icon{
+    margin-left: 30px;
   }
 
-  .bg-div {
-    overflow: hidden;
- }
- nav {
-     float: left;
- }
- 
 
-  /*section {
+  section {
     padding: 10px 10px;
     margin: 10px;
     display:block;
-  } */
+  } 
 
   .header {
     padding-top: .5em;
@@ -56,12 +62,13 @@
     border-radius: 5px;
 }
 .nav {
-    margin-top: 2px;
+    margin-top: 5px;
      }
 
 .nav a {
 	padding: 10px 15px;
 	text-transform: uppercase;
+  font-weight: bold;
 	text-align:left;
 	display: block;
 	color: #c9afe2;
@@ -71,6 +78,23 @@
  .nav a:hover {
 	background-color: #372a52;
 	color: #f8f7f8;
+}
+
+.online {
+  position: relative;
+}
+
+.online::after{
+  content: '';
+  width: 7px;
+  height: 7px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #41db51;
+  position: absolute;
+  margin-right: 120px;
+  top: 0;
+  right: 0;
 }
 
 @media (min-width: 800px) {
@@ -92,19 +116,134 @@
 }
 
 @media(max-width: 800px) {
-  .logo {
+  .nav-user-icon {
       display: none;
   }
 
 }
 
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 5%;
+}
+.left-sidebar{
+  
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  height: 100vh;
+}
 
-.footer {
-	background-color: rgba(0, 0, 0, 0.93);
+.right-sidebar{
+  
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  color: #626262;
+  line-height: 0.8;
+}
+.sidebar-title a:last-child{
+  color: #b98de1;
+}
+.event a:last-child{
+  color: #b98de1;
+}
+
+.main-content{
+  flex-basis: 47%;
+}
+
+.imp-links a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #626262;
+  width: fit-content;
+}
+
+.imp-links a img{
+  width: 25px;
+  margin-right: 15px;
+}
+
+.imp-links a:last-child{
+  color: #b98de1;
+}
+
+.imp-links{
+  border-bottom: 1px solid #ccc;
+} 
+
+.sidebar-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.sidebar-title h4{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.sidebar-title a{
+  text-decoration: none;
+  color: #626262;
+  font-size: 12px;
+}
+
+.event{
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.left-event{
+  border-radius: 15px;
+  height: 70px;
+  width: 70px;
+  margin-right: 15px;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px #725075;
+}
+
+.event p{
+  font-size: 12px;
+}
+
+.event a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #b98de1;
+}
+
+.left-event span{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #b98de1;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 0;
+}
+
+/*.footer {
+	background-color: rgba(255, 255, 255, 0.93);
 	height: 5vh;
 	border-radius: 5px;
 	
-	position: absolute;
+	position:relative;
     bottom: 2vh;
 	width: 98vw;
 }
@@ -115,3 +254,32 @@
   
   width: 98vw;
 }
+
+.block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 500px;
+  background-color: lightgray;
+  
+  gap: 10px 10px;
+}
+
+.container {
+  text-align: center;
+}
+
+.block img {
+ width: 300px;
+ 
+}*/
+
+@media(max-width: 500px) {
+  .block {
+      grid-template-columns: auto;
+  }
+}
+
+
+
