@@ -108,7 +108,7 @@ nav {
     flex-wrap: physical;
 }
 
-#box {
+#post-position {
 	position: absolute;
 	width: 350px;
     height: 400px;
@@ -121,18 +121,4 @@ nav {
     border-radius: 6px;
 }
 
-#leftside {
-    float: left;
-    height: 250px;
-    width: 120px;
-    
-}
 
-#rightside {
-    float: right;
-    height: 250px;
-    width: 280px;
-    text-align: right;
-    top: 0;
-    bottom: 90px;
-}
