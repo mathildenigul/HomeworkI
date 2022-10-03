@@ -114,14 +114,48 @@ nav {
 #textarea {
     position: relative;
     resize: none;
+    font-weight: normal;
     margin-left: 40%;
     margin-top: 5%;
 }
 
-#label {
+#post_body {
     position: absolute;
     margin-left: 10%;
     margin-top: 5%;
+
+}
+
+#select_file {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid black;
+    background-color: gray;
+    color: snow;
+    font-weight: normal;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+#submit-button {
+    position: absolute;
+    text-align: center;
+    height: 30px;
+    width: 130px;
+    font-size: large;
+    cursor: pointer;
+    display: flex;
 }
 
 

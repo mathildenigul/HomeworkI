@@ -21,14 +21,17 @@
 
 <div id="post-position">
     <div>
+        <label class="element" id="post_body"> Post body </label>
+		<textarea class="element" id="textarea" placeholder="textarea" rows="7" cols="25"></textarea><br>
+
+        <label class="element" id="select_file"> Select file </label>
+        <label class="custom-file-upload" > 
+            <input type="file"/>
+            Choose file 
+        </label>
+        
         <form action="index.html">
-            <label class="element" id="label"> Post body </label>
-		<textarea class="element" id="textarea" placeholder="textarea" rows="5" cols="20"></textarea>
-        <br>
-        
-        <input type="file" id="myFile" name="filename">
-        <input type="submit">
-        
+            <input class="element" type="submit" id="submit-button" value="CREATE POST"  >
 		</form> 
         </div>
         
