@@ -1,3 +1,15 @@
+a {
+  color: #c9afe2;
+}
+
+body {
+  background-color: gray;
+}
+
+input {
+  background-color: aliceblue;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -6,6 +18,7 @@
 .element {
 	position: relative;
 	text-align: center;
+  color: #a869e4;
 }
 
 #box {
@@ -17,6 +30,6 @@
     left: 0;
     right: 0;
     margin: auto;
-	background-color: gray;
+	background-color: rgba(41, 37, 37, 0.914);
   border-radius: 5px;
 }
