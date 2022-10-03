@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    background: #efefef;
+}
+
 .header {
     padding-top: .5em;
     padding-bottom: .5em;
