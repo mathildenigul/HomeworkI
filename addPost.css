@@ -108,6 +108,12 @@ nav {
     flex-wrap: physical;
 }
 
+.element {
+	position: relative;
+	text-align: left;
+    color: #a869e4;
+}
+
 #post-position {
 	position: absolute;
 	width: 350px;
@@ -119,6 +125,18 @@ nav {
     margin: auto;
 	background-color: lightgray;
     border-radius: 6px;
+}
+
+#textarea {
+    position: relative;
+    resize: none;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+#label {
+    margin-left: 10%;
+    margin-top: 500px;
 }
 
 
