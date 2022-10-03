@@ -53,7 +53,7 @@
     padding-top: .5em;
     padding-bottom: .5em;
     border: 1px solid #855fc1;
-    background-color:rgba(9, 1, 1, 0.914);
+    background-color:rgba(41, 37, 37, 0.914);
     overflow: hidden;
     position: sticky; 
     top: 0; 
@@ -138,7 +138,7 @@
 
 .right-sidebar{
   
-  flex-basis: 25%;
+  flex-basis: 27%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
@@ -155,8 +155,11 @@
   color: #b98de1;
 }
 
+
 .main-content{
+  
   flex-basis: 47%;
+  
 }
 
 .imp-links a{
@@ -258,6 +261,7 @@
   margin-right: 10px;
 }
 
+
 .user-profile p{
   margin-bottom: -5px;
   font-weight: 500;
@@ -271,6 +275,7 @@
 .post-input-container{
   padding-left: 55px;
   padding-top: 20px;
+
 }
 
 .post-input-container textarea{
@@ -288,10 +293,52 @@
   border-radius: 6px;
   padding: 20px;
   color: #626262;
-  text-align: center;
   margin: 20px 0;
 }
 
+.user-profile span{
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+.post-text{
+  color: #9a9a9a;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.post-text span{
+  color: #626262;
+  font-weight: 500;
+}
+
+.post-text a{
+  color: #855fc1;
+  text-decoration: none;
+}
+
+.post-img{
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.post-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activity-icons div img{
+  width: 18px;
+  margin-right: 10px;
+}
+
+.activity-icons div{
+  display: inline-flex;
+  align-items: center;
+  margin-right: 30px;
+}
 /*.footer {
 	background-color: rgba(255, 255, 255, 0.93);
 	height: 5vh;
