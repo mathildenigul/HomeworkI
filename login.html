@@ -5,6 +5,7 @@
 <title>Login</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="login.css">
+<script src="login.js"></script>
 </head>
 
 <body>
@@ -29,8 +30,8 @@ test
 		Please log in
 	</div>
 	<div class="element">
-		<form action="index.html">
-			<input type="text" id="username" placeholder="email"><br>
+		<form id="login_form" onsubmit="validate()">
+			<input type="text" id="email" placeholder="email"><br>
 			<input type="text" id="password" placeholder="password"><br><br>
 			<input type="submit" value="Log in">
 		</form> 
