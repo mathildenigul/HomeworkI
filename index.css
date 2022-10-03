@@ -122,6 +122,13 @@
 
 }
 
+@media(max-width: 800px) {
+  .right-sidebar {
+      display: none;
+  }
+
+}
+
 .container{
   display: flex;
   justify-content: space-between;
