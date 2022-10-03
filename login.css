@@ -26,3 +26,8 @@
 	background-color: gray;
   border-radius: 5px;
 }
+
+a {
+  color: #34495e;
+  text-decoration: none;
+}
