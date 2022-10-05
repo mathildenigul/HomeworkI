@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="common.css">
 <link rel="stylesheet" type="text/css" href="login.css">
-<script src="login.js"></script>
 </head>
 
 <body>
@@ -33,9 +32,9 @@
 		Please log in
 	</div>
 	<div class="element">
-		<form id="login_form" onsubmit="validate()">
-			<input type="text" id="email" placeholder="email"><br>
-			<input type="text" id="password" placeholder="password"><br><br>
+		<form id="login_form" action="index.html">
+			<input type="text" id="email" placeholder="email" required><br>
+			<input type="text" id="password" placeholder="password" required><br><br>
 			<input type="submit" value="Log in">
 		</form> 
 	</div>
