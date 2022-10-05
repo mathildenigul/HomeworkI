@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="et">
+  <head>
+    <title>addPost</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <link rel="stylesheet" type="text/css" href="addPost.css" />
+  </head>
 
-<head>
-<title>addPost</title>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" type="text/css" href="common.css">
-<link rel="stylesheet" type="text/css" href="addPost.css">
-</head>
-
-<body>
-
+  <body>
     <header class="header">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-        </ul>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+      </ul>
 
-        <a class="logo" href="#"><img src="me.png" width="50" height="50" alt="My picture"></a>
+      <a class="logo" href="#"
+        ><img src="me.png" width="50" height="50" alt="My picture"
+      /></a>
     </header>
 
-<div id="post-position">
-    <div>
+    <div id="post-position">
+      <div>
         <label class="element" id="post_body"> Post body </label>
-		<textarea class="element" id="textarea" placeholder="What's on your mind?" rows="7" cols="25"></textarea><br>
+        <textarea
+          class="element"
+          id="textarea"
+          placeholder="What's on your mind?"
+          rows="7"
+          cols="25"
+        ></textarea
+        ><br />
 
         <label class="element" id="select_file"> Select file </label>
-        <label class="custom-file-upload" > 
-            <input type="file"/>
-            Choose file 
+        <label class="custom-file-upload">
+          <input type="file" />
+          Choose file
         </label>
-        
-        <form action="index.html">
-            <input class="element" type="submit" id="submit-button" value="CREATE POST"  >
-		</form> 
-        </div>
-        
-</div>
-</body>
 
+        <form action="index.html">
+          <input
+            class="element"
+            type="submit"
+            id="submit-button"
+            value="CREATE POST"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

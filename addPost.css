@@ -1,150 +1,144 @@
 * {
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-	line-height: 1.6;
-	margin: 0;
+  line-height: 1.6;
+  margin: 0;
 }
 
 ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-	color: #34495e;
-	text-decoration: none;
+  color: #34495e;
+  text-decoration: none;
 }
 
-
 .nav {
-    float: left;
-    margin-top: 2px;
+  float: left;
+  margin-top: 2px;
 }
 
 .header {
-    padding-top: .5em;
-    padding-bottom: .5em;
-    border: 1px solid #855fc1;
-    background-color:rgba(41, 37, 37, 0.914);
-    overflow: hidden;
-    position: sticky; 
-    top: 0; 
-    width: 100%;
-    box-shadow: 0px 0px 14px 0px rgb(139, 106, 155);
-    border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 1px solid #855fc1;
+  background-color: rgba(41, 37, 37, 0.914);
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 0px 14px 0px rgb(139, 106, 155);
+  border-radius: 5px;
 }
 
 .nav a {
-	padding: 10px 15px;
-	text-transform: uppercase;
-	text-align:left;
-	display: block;
-	color: #c9afe2;
-	font-size: .999em;
-	}
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: left;
+  display: block;
+  color: #c9afe2;
+  font-size: 0.999em;
+}
 
 .nav a:hover {
-	background-color: #372a52;
-	color: #f8f7f8;
+  background-color: #372a52;
+  color: #f8f7f8;
 }
 
 @media (min-width: 800px) {
-    .header,
-    .nav {
-        display: flex;
-    }
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-    }
-    
-    @media (min-width: 1000px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    }
-    
-    @media(max-width: 800px) {
-    .logo {
-        display: none;
-    }
-    
-    }
-    
+  .header,
+  .nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+}
 
 .element {
-	position: relative;
-	text-align: left;
-    color: #a869e4;
+  position: relative;
+  text-align: left;
+  color: #a869e4;
 }
 
 #post-position {
-	position: absolute;
-	width: 350px;
-    height: 400px;
-    top: 100px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-	background-color: lightgray;
-    border-radius: 6px;
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: lightgray;
+  border-radius: 6px;
 }
 
 #textarea {
-    position: relative;
-    resize: none;
-    font-weight: normal;
-    margin-left: 40%;
-    margin-top: 15%;
+  position: relative;
+  resize: none;
+  font-weight: normal;
+  margin-left: 40%;
+  margin-top: 15%;
 }
 
 #post_body {
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 15%;
-
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 15%;
 }
 
 #select_file {
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 10%;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
 input[type="file"] {
-    display: none;
+  display: none;
 }
 
 .custom-file-upload {
-    border: 1px solid black;
-    background-color: gray;
-    color: snow;
-    font-weight: normal;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-    margin-left: 40%;
-    margin-top: 10%;
+  border: 1px solid black;
+  background-color: gray;
+  color: snow;
+  font-weight: normal;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 40%;
+  margin-top: 10%;
 }
 
 #submit-button {
-    position: relative;
-    text-align: center;
-    font-size: large;
-    cursor: pointer;
-    display: flex;
-    margin: auto;
-    padding: 8px 15px;
-    margin-top: 10%;
-    background-color: #c0aed1;
-    border: 1px solid black;
+  position: relative;
+  text-align: center;
+  font-size: large;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  padding: 8px 15px;
+  margin-top: 10%;
+  background-color: #c0aed1;
+  border: 1px solid black;
 }
-
-

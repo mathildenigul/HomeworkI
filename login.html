@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="et">
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <link rel="stylesheet" type="text/css" href="login.css" />
+  </head>
 
-<head>
-<title>Login</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="common.css">
-<link rel="stylesheet" type="text/css" href="login.css">
-</head>
+  <body>
+    <header class="header">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </header>
 
-<body>
-
-<header class="header">
-	<ul class="nav">
-		<li><a href="index.html">Home</a></li>
-	</ul>
-</header>
-
-<div id="box" class="flex-container">
-	<div class="top"></div>
-	<div class="element">
-		Welcome
-	</div>
-	<br>
-	<br>
-	<div class="element">
-		<a href="https://google.com">Create an account</a>
-	</div>
-	<div class="element">
-		or
-	</div>
-	<div class="element">
-		Please log in
-	</div>
-	<div class="element">
-		<form id="login_form" action="index.html">
-			<input type="text" id="email" placeholder="email" required><br>
-			<input type="text" id="password" placeholder="password" required><br><br>
-			<input type="submit" value="Log in">
-		</form> 
-	</div>
-	<div class="element">
-		<a href="https://google.com">Forgot password</a>
-	</div>
-</div>
-
-</body>
-
+    <div id="box" class="flex-container">
+      <div class="top"></div>
+      <div class="element">Welcome</div>
+      <br />
+      <br />
+      <div class="element">
+        <a href="https://google.com">Create an account</a>
+      </div>
+      <div class="element">or</div>
+      <div class="element">Please log in</div>
+      <div class="element">
+        <form id="login_form" action="index.html">
+          <input type="text" id="email" placeholder="email" required /><br />
+          <input
+            type="text"
+            id="password"
+            placeholder="password"
+            required
+          /><br /><br />
+          <input type="submit" value="Log in" />
+        </form>
+      </div>
+      <div class="element">
+        <a href="https://google.com">Forgot password</a>
+      </div>
+    </div>
+  </body>
 </html>
