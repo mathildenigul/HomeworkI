@@ -16,8 +16,14 @@
         <li><a href="addPost.html">Add Post</a></li>
       </ul>
       <div class="nav-right">
-        <div class="nav-user-icon online">
-          <img src="me.png" />
+        <div class="nav-user-icon online" onclick="myFunction()" >
+          <img src="me.png">
+          
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Mari Mutt</a>
+    <a href="#about">mari.mutt@ut.ee</a>
+    <a href="#contact">logout</a>
+  </div>
         </div>
       </div>
     </header>
@@ -187,5 +193,32 @@
         </div>
       </div>
     </div>
+
+    <script>
+      
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      /*$(document).ready(function(){
+    $('#pic').click(function() {
+        $('.dropdown-content').toggle("")});
+});*/
+      
+      window.onclick = function(event) {
+        if (!event.target.matches(".nav-user-icon")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+      
+
   </body>
 </html>

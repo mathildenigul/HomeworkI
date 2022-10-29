@@ -46,7 +46,7 @@ section {
   padding-bottom: 0.5em;
   border: 1px solid #855fc1;
   background-color: rgba(41, 37, 37, 0.914);
-  overflow: hidden;
+  
   position: sticky;
   top: 0;
   width: 100%;
@@ -84,8 +84,8 @@ section {
   border-radius: 50%;
   background: #41db51;
   position: absolute;
-  margin-right: 120px;
-  top: 0;
+  margin-right: 110px;
+  top: 14px;
   right: 0;
 }
 
@@ -126,7 +126,7 @@ section {
 }
 .left-sidebar {
   flex-basis: 25%;
-  position: sticky;
+  position: relative;
   top: 70px;
   align-self: flex-start;
   height: 100vh;
@@ -312,3 +312,41 @@ section {
     grid-template-columns: auto;
   }
 }
+.nav-user-icon {
+  background-color: rgba(58, 55, 55, 0.914);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-user-icon:hover, .nav-user-icon:focus {
+  background-color: #9662a8;
+}
+
+.nav-user-icon  {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position:fixed;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10000;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-user-icon  a:hover {background-color: #ddd;}
+
+.show {display: block;}
