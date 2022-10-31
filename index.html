@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="common.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="index.js"></script>
   </head>
 
-  <body>
+  <body onload="getPostsURI()">
     <header class="header">
       <ul class="nav">
         <li><a href="login.html"> Log in</a></li>
@@ -17,7 +18,7 @@
       </ul>
       <div class="nav-right">
         <div class="nav-user-icon online" onclick="myFunction()" >
-          <img src="me.png">
+          <img src="profile_pictures/Mari Mutt.png">
           
   <div id="myDropdown" class="dropdown-content">
     <a href="#home">Mari Mutt</a>
@@ -31,148 +32,15 @@
     <div class="container">
       <div class="left-sidebar">
         <div class="imp-links">
-          <a href="https://www.err.ee/"><img src="news.png" /> Latest News</a>
+          <a href="https://www.err.ee/"><img src="images/news.png" /> Latest News</a>
           <a href="https://en.wikipedia.org/wiki/Friends">
-            <img src="friends.png" /> Friends
+            <img src="images/friends.png" /> Friends
           </a>
           <a href="https://ut.ee/et"> See more </a>
         </div>
       </div>
 
-      <div class="main-content">
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="me.png" />
-            <div>
-              <p>Mari Mutt</p>
-              <span>September 29 2021, 13.20 </span>
-            </div>
-          </div>
-          <p class="post-text">
-            Ütle mulle üks ilus poisslapse nimi.
-            <a href="#">#BrunoBennoBernhard</a>
-          </p>
-          <img src="feed1.png" class="post-img" />
-
-          <div class="post-row">
-            <div class="activity-icons">
-              <div><img src="like.png" />300</div>
-              <div><img src="comment.png" />4502</div>
-              <div><img src="share.png" />140</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="mimmu.png" />
-            <div>
-              <p>Saara Sisask</p>
-              <span>September 29 2021, 00.40 </span>
-            </div>
-          </div>
-          <p class="post-text">
-            Kaugelt nurga mehed peavadki varem tulema.
-            <a href="#">#Imeliknimi</a>
-          </p>
-          <img src="feed2.png" class="post-img" />
-
-          <div class="post-row">
-            <div class="activity-icons">
-              <div><img src="like.png" />30</div>
-              <div><img src="comment.png" />5</div>
-              <div><img src="share.png" />1</div>
-            </div>
-          </div>
-        </div>
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="toots.png" />
-            <div>
-              <p>Siiri Leer</p>
-              <span>September 27 2021, 5.08 </span>
-            </div>
-          </div>
-          <p class="post-text">
-            Lilled... Heinamaa... Päikesepaiste... <a href="#">#deep</a>
-          </p>
-
-          <div class="post-row">
-            <div class="activity-icons">
-              <div><img src="like.png" />50234</div>
-              <div><img src="comment.png" />4678</div>
-              <div><img src="share.png" />342</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="rock.png" />
-            <div>
-              <p>Seedu Pump</p>
-              <span>September 28 2021, 21.39 </span>
-            </div>
-          </div>
-          <p class="post-text">
-            Kui valetad, saad kolki! <a href="#">#ParemOleks</a>
-          </p>
-          <img src="feed3.png" class="post-img" />
-
-          <div class="post-row">
-            <div class="activity-icons">
-              <div><img src="like.png" />102</div>
-              <div><img src="comment.png" />23</div>
-              <div><img src="share.png" />9</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="felix.png" />
-            <div>
-              <p>Feeliks Kana</p>
-              <span>September 28 2021, 7.02 </span>
-            </div>
-          </div>
-          <p class="post-text">
-            Mis kinni ei jää, saab kinni löödud! <a href="#">#LestaOnOP</a>
-          </p>
-          <img src="feed4.png" class="post-img" />
-
-          <div class="post-row">
-            <div class="activity-icons">
-              <div><img src="like.png" />563</div>
-              <div><img src="comment.png" />97</div>
-              <div><img src="share.png" />47</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="jungkook.png" />
-            <div>
-              <p>Juula Kook</p>
-              <span>September 27 2021, 5.08 </span>
-            </div>
-          </div>
-          <p class="post-text">
-            Aga mis see inimene muud on kui üks masinavärk. Peab määrima, muidu
-            läheb põlema. <a href="#">#MääriAgaMääri</a>
-          </p>
-          <img src="feed5.png" class="post-img" />
-
-          <div class="post-row">
-            <div class="activity-icons">
-              <div><img src="like.png" />98</div>
-              <div><img src="comment.png" />3</div>
-              <div><img src="share.png" />0</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="main-content" class="main-content"></div>
 
       <div class="right-sidebar">
         <div class="sidebar-title">
