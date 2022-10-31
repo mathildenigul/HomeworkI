@@ -73,6 +73,7 @@ function loadPosts(posts) {
 function getPostsURI() {
   window
     .fetch("https://api.npoint.io/a3522306c1b343bffcd8")
+    //fetch('../posts.json')
     .then(function (response) {
       return response.json();
     })
@@ -80,3 +81,9 @@ function getPostsURI() {
       loadPosts(data);
     });
 }
+
+/* function getPostsFromFile() {
+  fetch('../posts.json')
+  .then(response => response.json())
+  .then(data => loadPosts(data));
+} */
