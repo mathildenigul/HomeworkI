@@ -10,7 +10,7 @@
     <script src="index.js"></script>
   </head>
 
-  <body onload="getPostsURI()">
+  <body onload="getPostsURI(); initSidebar()">
     <header class="header">
       <ul class="nav">
         <li><a href="login.html"> Log in</a></li>
@@ -42,7 +42,7 @@
 
       <div id="main-content" class="main-content"></div>
 
-      <div class="right-sidebar">
+      <div id="right-sidebar" class="right-sidebar">
         <div class="sidebar-title">
           <h4>Events</h4>
           <a href="https://visittartu.com/events">See All</a>
@@ -66,6 +66,14 @@
       
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
+        
+        if(document.getElementById("right-sidebar").style.visibility == "visible") {
+          document.getElementById("right-sidebar").style.visibility = "hidden";
+        }
+        else {
+          document.getElementById("right-sidebar").style.visibility = "visible";
+        }
+        
       }
 
       /*$(document).ready(function(){
@@ -83,7 +91,12 @@
               openDropdown.classList.remove('show');
             }
           }
+          document.getElementById("right-sidebar").style.visibility = "visible";
         }
+      }
+
+      function initSidebar() {
+        document.getElementById("right-sidebar").style.visibility = "visible";
       }
       </script>
       
