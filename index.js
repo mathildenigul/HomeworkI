@@ -82,8 +82,12 @@ function getPostsURI() {
     });
 }
 
-/* function getPostsFromFile() {
-  fetch('../posts.json')
-  .then(response => response.json())
-  .then(data => loadPosts(data));
-} */
+function getPostsFile() {
+  window.fetch('/posts.json')
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data) {
+    loadPosts(data[0]);
+  });
+}
