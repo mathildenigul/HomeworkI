@@ -23,10 +23,10 @@ function loadPosts(posts) {
     post_text.classList.add("post-text");
     post_text.innerText = post_data["text"];
 
-    if(!(post_data["text_only"])) {
-        var image = document.createElement("img");
-        image.classList.add("post-img");
-        image.src = "post_pictures/" + post_data["id"] + ".png";
+    if (!post_data["text_only"]) {
+      var image = document.createElement("img");
+      image.classList.add("post-img");
+      image.src = "post_pictures/" + post_data["id"] + ".png";
     }
 
     var post_row = document.createElement("div");
@@ -61,8 +61,8 @@ function loadPosts(posts) {
 
     post.appendChild(user_profile);
     post.appendChild(post_text);
-    if(!(post_data["text_only"])) {
-        post.appendChild(image);
+    if (!post_data["text_only"]) {
+      post.appendChild(image);
     }
     post.appendChild(post_row);
 
@@ -73,7 +73,6 @@ function loadPosts(posts) {
 function getPostsURI() {
   window
     .fetch("https://api.npoint.io/a3522306c1b343bffcd8")
-    //fetch('../posts.json')
     .then(function (response) {
       return response.json();
     })
@@ -83,11 +82,12 @@ function getPostsURI() {
 }
 
 function getPostsFile() {
-  window.fetch('/posts.json')
-  .then(function(response){
-    return response.json();
-  })
-  .then(function(data) {
-    loadPosts(data[0]);
-  });
+  window
+    .fetch("/posts.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      loadPosts(data[0]);
+    });
 }

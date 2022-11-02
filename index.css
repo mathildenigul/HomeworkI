@@ -46,7 +46,7 @@ section {
   padding-bottom: 0.5em;
   border: 1px solid #855fc1;
   background-color: rgba(41, 37, 37, 0.914);
-  
+
   position: sticky;
   top: 0;
   width: 100%;
@@ -321,22 +321,23 @@ section {
   cursor: pointer;
 }
 
-.nav-user-icon:hover, .nav-user-icon:focus {
+.nav-user-icon:hover,
+.nav-user-icon:focus {
   background-color: #9662a8;
 }
 
-.nav-user-icon  {
+.nav-user-icon {
   position: relative;
   display: inline-block;
 }
 
 .dropdown-content {
   display: none;
-  position:fixed;
+  position: fixed;
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10000;
 }
 
@@ -347,6 +348,10 @@ section {
   display: block;
 }
 
-.nav-user-icon  a:hover {background-color: #ddd;}
+.nav-user-icon a:hover {
+  background-color: #ddd;
+}
 
-.show {display: block;}
+.show {
+  display: block;
+}

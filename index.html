@@ -18,14 +18,14 @@
         <li><a href="addPost.html">Add Post</a></li>
       </ul>
       <div class="nav-right">
-        <div class="nav-user-icon online" onclick="myFunction()" >
-          <img src="profile_pictures/Mari Mutt.png">
-          
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Mari Mutt</a>
-    <a href="#about">mari.mutt@ut.ee</a>
-    <a href="#contact">logout</a>
-  </div>
+        <div class="nav-user-icon online" onclick="myFunction()">
+          <img src="profile_pictures/Mari Mutt.png" />
+
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Mari Mutt</a>
+            <a href="#about">mari.mutt@ut.ee</a>
+            <a href="#contact">logout</a>
+          </div>
         </div>
       </div>
     </header>
@@ -33,7 +33,9 @@
     <div class="container">
       <div class="left-sidebar">
         <div class="imp-links">
-          <a href="https://www.err.ee/"><img src="images/news.png" /> Latest News</a>
+          <a href="https://www.err.ee/"
+            ><img src="images/news.png" /> Latest News</a
+          >
           <a href="https://en.wikipedia.org/wiki/Friends">
             <img src="images/friends.png" /> Friends
           </a>
@@ -64,43 +66,40 @@
     </div>
 
     <script>
-      
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
-        
-        if(document.getElementById("right-sidebar").style.visibility == "visible") {
+
+        if (
+          document.getElementById("right-sidebar").style.visibility == "visible"
+        ) {
           document.getElementById("right-sidebar").style.visibility = "hidden";
-        }
-        else {
+        } else {
           document.getElementById("right-sidebar").style.visibility = "visible";
         }
-        
       }
 
       /*$(document).ready(function(){
     $('#pic').click(function() {
         $('.dropdown-content').toggle("")});
 });*/
-      
-      window.onclick = function(event) {
+
+      window.onclick = function (event) {
         if (!event.target.matches(".nav-user-icon")) {
           var dropdowns = document.getElementsByClassName("dropdown-content");
           var i;
           for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
             }
           }
           document.getElementById("right-sidebar").style.visibility = "visible";
         }
-      }
+      };
 
       function initSidebar() {
         document.getElementById("right-sidebar").style.visibility = "visible";
       }
-      </script>
-      
-
+    </script>
   </body>
 </html>
