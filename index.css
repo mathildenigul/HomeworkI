@@ -135,7 +135,7 @@ section {
 .right-sidebar {
   flex-basis: 27%;
   position: sticky;
-  top: 70px;
+  top: 131px;
   align-self: flex-start;
   background: #fff;
   padding: 20px;
